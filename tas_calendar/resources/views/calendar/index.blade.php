@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="text-center mt-5">FullCalendar js Laravel series with Career Development Lab</h3>
+                <h3 class="text-center mt-5">FullCalendar</h3>
                 <div class="col-md-11 offset-1 mt-5 mb-5">
 
                     <div id="calendar">

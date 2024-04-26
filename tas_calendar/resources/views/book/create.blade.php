@@ -13,7 +13,7 @@
             <h4 class="text-center mt-5">Excel File Import in Laravel </h4>
             <div class="col md-10 offset-1 mt-5">
                 <form method="POST" action="{{ route('books.store') }}" enctype="multipart/form-data">
-                  @csrf
+                  
                     <input type="file" name="file" class="form-control">
                     <button type="submit" class="btn btn-info mt-2">Upload</button>
                 </form>
