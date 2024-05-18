@@ -57,7 +57,7 @@ function initCalendar() {
             year === new Date().getFullYear() &&
             month === new Date().getMonth()
         ) {
-            days += `<div class="day today">${i}</div>`;
+            days += `<div class="day today active">${i}</div>`;
         } else {
             days += `<div class="day">${i}</div>`;
         }
