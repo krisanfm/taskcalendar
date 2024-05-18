@@ -17,7 +17,7 @@ body{
 .container{
     position: relative;
     width: 1200px;
-    min-height: 650px;
+    min-height: 810px;
     margin: 0 auto;
     padding: 5px;
     color: #fff;
@@ -108,7 +108,7 @@ body{
 }
 .calendar .days .day{
     width: 14.28%; 
-    height: 90px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
