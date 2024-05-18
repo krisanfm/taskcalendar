@@ -100,7 +100,6 @@ prev.addEventListener('click', prevMonth);
 next.addEventListener('click', nextMonth);
 
 
-//event listener for goto buttons
 
 todayBtn.addEventListener('click', () => {
     today = new Date();
@@ -131,7 +130,14 @@ dateInput.addEventListener('keypress', (e) => {
     }
 });
 
-gotoBtn.addEventListener("click", gotoDate);
+gotoBtn.addEventListener("click",()=>{
+    gotoDate();
+    clearInput();
+});
+
+function clearInput() {
+    document.getElementById('inputDate').value = '';
+}
 
 function gotoDate(){
     const dateArr = dateInput.value.split("/");
