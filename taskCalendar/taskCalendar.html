@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task Calendar</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/todolist.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
- <div class="container">
-  <div id="app" class=" grid grid-cols-2 gap-10">
-    <div class=" border-black border-2 rounded-xl p-10">
-        <div class="text-center font-bold text-4xl bg-yellow-200 rounded-xl mb-6 py-5">Calendar</div>
-        <div class="flex justify-between items-center mb-4">
-            <button id="prevMonth" class="px-3 py-1 bg-blue-500 text-white rounded">Prev</button>
-            <h1 id="currentMonth" class="text-lg font-bold">Month Year</h1>
-            <button id="nextMonth" class="px-3 py-1 bg-blue-500 text-white rounded">Next</button>
-          </div>
-          <div class="rounded grid grid-cols-7 text-center font-bold pb-5">
-              <div>SUN</div>
-              <div>MON</div>
-              <div>TUE</div>
-              <div>WED</div>
-              <div>THU</div>
-              <div>FRI</div>
-              <div>SAT</div>
-          </div>
-          <div id="calendar" class="grid grid-cols-7 gap-2"></div>
-    </div>
-   <!--  <div class="bg-yellow-200 text-center rounded-xl border-black border-2 p-10">
-        <div class="text-4xl font-bold bg-gray-300 rounded-xl py-5 mb-6">Tasks</div>
-        <div class="gap-5">
-            <div class="py-5 bg-yellow-300 rounded-3xl text-2xl"><i class="text-gray-500">"no current tasks"</i></div> -->
-
-            <!-- JS code for the 'plus' button to add tasks -->
-     <!--        <div id="addTask" class="font-bold text-2xl text-black-100 p-4 border-black border-2 rounded-xl m-4">+</div>
+    
+    <div class="container">
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fa fa-angle-left prev"></i>
+                    <div class="date"></div>
+                    <i class="fa fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+                </div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" id="inputDate" onfocus="this.value=''" placeholder="mm/yyyy" class="date-input" maxlength="7">
+                        <button class="goto-btn">go</button>
+                    </div>
+                    <button class="today-btn">today</button>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-  -->
-    <div class="todolist">
-      <h2>TO-DO List <img src="C:\Users\admin\Desktop\taskcalendar\images\to-do-list.png" alt=""></h2>
-      <div class="row">
-        <input type="text" id="input-box" placeholder="Add your Text">
-        <button onclick="addTask()">Add</button>
-      </div>
-      <ul id="list-container">
-        <!-- <li class="checked">Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li> -->
-      </ul>
-    </div>
- </div>
- <script src="js/taskCalendar.js"></script>
-  <script src="js/todo.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
