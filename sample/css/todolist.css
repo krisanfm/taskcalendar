@@ -1,9 +1,11 @@
+@import url(../css/acc.css);
 *{
     
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    /* background-image: url(../images/bg.jpg); */
     /* background: linear-gradient(135deg, #153677, #4e085f);
  */
 }
@@ -11,6 +13,14 @@
     width: 100%;
     min-height: 100vh;
     padding: 10px;
+}
+h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #002765;
+    font-weight: bolder;
+    font-size: 25px;
 }
 .todolist{
     width: 100%;
@@ -31,7 +41,7 @@
     width: 30px ;
     margin-left: 10px;
 }
-.row{
+.row_task{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +81,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url();
+    background-image: url(../images/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -82,8 +92,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before {
-    background-image: url(images/checked.png);
-
+    background-image: url(../images/checked.png);
 }
 ul li span{
     position: absolute;
