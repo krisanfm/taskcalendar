@@ -1,0 +1,80 @@
+.row
+{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.column
+{
+    flex-basis: 50%;
+    min-width: 300px;
+
+
+}
+.form-bar
+{
+    width: 300px;
+    height: 500px;
+    position:relative;
+    background: rgba(0, 0, 0, 0.226);
+    top:50px;
+    left:120px;
+}
+form h1
+{
+    color: blue;
+    padding-bottom: 20px;
+}
+.form
+{
+    position: relative;
+    margin:0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+.form input 
+{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+   
+}
+.form #button
+{
+    width: 50%;
+    padding: 5px;
+    color: rgb(6, 6, 255);
+    border: none;
+    cursor:pointer;
+}
+.form .question
+{
+    margin: 15px 0 0;
+    font-size: 12px;
+}
+.form .question a
+{
+    color: blue;
+    text-decoration: none;
+   
+}
+.form .registerform
+{
+    display: none;
+}
+.column .say
+{
+    text-align: left ;
+    font-size: 30px;
+    font-family: sans-serif, cursive;
+    padding: 20px;
+    padding-left: 60px;
+    
+
+}
