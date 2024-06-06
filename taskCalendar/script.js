@@ -151,3 +151,39 @@ function gotoDate(){
         alert("Invalid Date!");
     }
 }
+
+
+const   addTaskBtn = document.querySelector(".add-task"),
+        addTaskContainer = document.querySelector(".add-task-wrapper"),
+        addTaskCloseBtn = document.querySelector(".close"),
+        addTaskName = document.querySelector(".task-name"),
+        addTaskFrom = document.querySelector(".task-time-from"),
+        addTaskTo = document.querySelector(".task-time-to");
+
+addTaskBtn.addEventListener("click", () => {
+    addTaskContainer.classList.toggle("active");
+});
+addTaskCloseBtn.addEventListener("click", () => {
+    addTaskContainer.classList.remove("active");
+});
+document.addEventListener("click" , (e) => {
+    if(e.target !== addTaskBtn && !addTaskContainer.contains(e.target)) {
+        addTaskContainer.classList.remove("active");
+    }
+});
+
+//50 characters only on title
+
+addTaskName.addEventListener("input", (e) => {
+    addTaskName.value = addTaskName.value.slice(0, 50);
+});
+
+addTaskFrom.addEventListener("input", (e) => {
+    addTaskFrom.value = addTaskFrom.value.replace(/[^0-9:]/g, "");
+    if (addTaskFrom.value.length == 2) {
+        addTaskFrom.value += ":";
+    }
+    if (addTaskFrom.value.length > 5) {
+        addTaskFrom.value = addTaskFrom.value.slice(0, 5);
+    }
+});

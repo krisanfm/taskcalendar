@@ -311,3 +311,110 @@ body{
 .task:hover::after{
     display: flex;
 }
+.add-task-wrapper{
+    position: absolute;
+    bottom: 100px;
+    left: 8%;
+    width: 85%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    /* transform: transalate(-50%); */
+    transition: max-height 0.5s;
+}
+.add-task-wrapper.active{
+    max-height: 300px;
+}
+.add-task-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #373c4f;
+    border-bottom: 1px solid #f5f5f5;
+}
+.add-task-header .close{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.add-task-header .close:hover{
+    color: var(--primary-clr);
+}
+.add-task-header .title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.add-task-body .add-task-input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.add-task-body .add-task-input input{
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #373c4f;
+}
+.add-task-body .add-task-input input::placeholder{
+    color: #a5a5a5;
+}
+.add-task-body .add-task-input input:focus{
+    border-color: var(--primary-clr);
+}
+.add-task-body .add-task-input input:focus::placeholder{
+    color: var(--primary-clr);
+}
+.add-task-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.add-task-btn{
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-clr);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-clr);
+}
+.add-task-btn:hover{
+    color: var(--primary-clr);
+    background-color: transparent;
+}
+.add-task{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #878895;
+    border: 2px solid #878895;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.add-task:hover{
+    opacity: 1;
+}
